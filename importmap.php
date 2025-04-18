@@ -22,9 +22,6 @@ return [
     '@symfony/ux-live-component' => [
         'path' => './vendor/symfony/ux-live-component/assets/dist/live_controller.js',
     ],
-    '@hotwired/stimulus' => [
-        'version' => '3.2.2',
-    ],
     'bootstrap/dist/css/bootstrap.min.css' => [
         'version' => '5.3.5',
         'type' => 'css',
@@ -34,5 +31,8 @@ return [
     ],
     '@popperjs/core' => [
         'version' => '2.11.8',
+    ],
+    '@hotwired/stimulus' => [
+        'version' => '3.2.2',
     ],
 ];

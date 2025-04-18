@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Se connecter</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+
+    {% block javascripts %}
+        {% block importmap %}
+            {{ importmap('app') }}
+        {% endblock %}
+    {% endblock %}
+</head>
+<body>
+<div class="container mt-5">
+    <form class="row justify-content-center" method="post">
+        <div class="col-md-6 col-sm-12 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="h3 mb-3 fw-bold text-center">Se connecter</h1>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="_username" id="inputEmail" placeholder="Nom d'utilisateur" value="{{ last_username }}">
+                        <label for="inputEmail">Nom d'utilisateur</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" name="_password" id="inputPassword" placeholder="Mot de passe">
+                        <label for="inputPassword">Mot de passe</label>
+                    </div>
+
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Se connecter</button>
+
+                    <p class="my-3 text-muted">
+                        Vous n'avez pas de compte ? <a class="text-decoration-none" href="{{ path('register_index') }}">S'inscrire'</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
