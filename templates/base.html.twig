@@ -12,7 +12,9 @@
         {% endblock %}
     </head>
     <body>
-    {% include 'navbar.html.twig' %}
+        {% include 'navbar.html.twig' %}
         {% block body %}{% endblock %}
+
+        {% include 'project/modal_create_project.html.twig' %}
     </body>
 </html>
